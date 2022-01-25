@@ -11,7 +11,10 @@ let b: {name: string, age?: number};
 b = {name: '孙悟空', age: 18};
 
 // [propName: string]: any 表示任意类型的属性
-let c: {name: string, [propName: string]: any};
+let c: {
+    name: string, 
+    [propName: string]: any
+};
 c = {name: '猪八戒', age: 18, gender: '男'};
 
 /*

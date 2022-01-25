@@ -47,7 +47,10 @@ if(typeof e === "string"){
 *   <类型>变量
 *
 * */
+// 方法一 as
 s = e as string;
+
+// 方法二
 s = <string>e;
 
 // void 用来表示空，以函数为例，就表示没有返回值的函数
