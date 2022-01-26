@@ -38,6 +38,7 @@ e = ['a', 'b', 'c'];
 
 // number[] 表示数值数值
 let f: number[];
+let arr:number[]=[1,2,3]
 
 let g: Array<number>;
 g = [1, 2, 3];
@@ -57,7 +58,7 @@ enum Gender{
     Male,
     Female
 }
-
+ 
 let i: {name: string, gender: Gender};
 i = {
     name: '孙悟空',
@@ -77,3 +78,36 @@ let l: myType;
 let m: myType;
 
 k = 2;
+
+
+
+/**
+ * 
+ * 数组中包含对象嵌套关系
+ * type 和 interface区别 ：https://www.jb51.net/article/163299.html 
+ */
+
+
+type objItemBytype={
+    name:string,
+    age:number,
+    [name:string]:any
+}
+
+interface objItemByInterface {
+    name:string,
+    age:number
+}
+
+
+let obj:objItemBytype={
+    name:'牛国振',
+    age:23,
+    sex:'男'
+}
+
+let oo:objItemByInterface[]
+
+oo=[
+    {name:'牛国振',age:12}
+]
