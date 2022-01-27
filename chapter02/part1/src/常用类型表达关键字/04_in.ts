@@ -62,3 +62,37 @@ let sc:sv={
     name:"张三",
     age:32
 }
+
+// ant-design-pro-ts 案例
+interface BasicLayoutProps{
+    location:'北京市'
+}
+
+interface MenuDataItem{
+    icon:string,
+    rate:number
+}
+
+
+type BasicLayoutContext = 
+  { [K in 'location']: BasicLayoutProps[K] }
+    & 
+  {
+    breadcrumbNameMap: {
+      [path: string]: MenuDataItem;
+    };
+  };
+
+
+  let deml:BasicLayoutContext={
+      location:'北京市',
+      breadcrumbNameMap:{
+          '/menu':{
+            icon:'set',
+            rate:1
+          }
+      }
+  }
+
+
+
