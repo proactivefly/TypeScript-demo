@@ -1,4 +1,4 @@
-// keyof 是TS中的索引类型查询操作符。keyof T 会得到由 T 上已知的公共属性名组成的联合类型。
+// keyof 是TS中的索引类型查询操作符。keyof T 会得到由 T 上已知的公共属性名组成的【联合类型】。
 
 interface Person {
     name: string;
