@@ -1,12 +1,12 @@
 {
-  "compilerOptions": {
+  "compilerOptions": { //设置编译的选项
     "module": "es2015",
     "target": "es2015",
     "strict": true,
     "outDir": "./dist",
     "noEmitOnError": true
   },
-  "include": [
+  "include": [ //include: 数组类型，用于表示 ts 管理的文件（2.0 以上）
     "./src/**/*"
   ]
 }

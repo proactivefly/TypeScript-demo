@@ -22,10 +22,6 @@ let newPerson:LiLei ={
 // 如果 T 可以满足类型 Teacher 则返回 Teacher 类型，否则为 T 类型
 type IsTeacher<T> = T extends Teacher ? Teacher : T;
 
-let newPp={
-    name:'可爱',
-    age:12
-}
-let newPerson1:IsTeacher<Han>={
+let newPerson1:IsTeacher<Han>={  //newPerson1 要么是Teacher 类型要么是Han类型
     speack:'英语'
 }

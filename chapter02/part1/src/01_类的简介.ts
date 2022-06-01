@@ -11,7 +11,7 @@ class Person{
     *       const per = new Person();
     *       per.name
     *
-    *   使用static开头的属性是静态属性（类属性），可以直接通过类去访问
+    *   使用static开头的属性是静态属性（类属性），可以直接通过类去访问 不可以被继承
     *       Person.age
     *
     *   readonly开头的属性表示一个只读的属性无法修改
