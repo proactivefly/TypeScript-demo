@@ -52,3 +52,14 @@ const mc = new MyClass<string>('孙悟空');
 
 
 
+
+// 复杂一点
+
+type CurrentAuthorityType={
+    name:string,
+    age:number
+}
+
+const fun=<T>(Authorized: T):((currentAuthority: CurrentAuthorityType) => T)=>{
+    return (currentAuthority: CurrentAuthorityType) => Authorized
+}
