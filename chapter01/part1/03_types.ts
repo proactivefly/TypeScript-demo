@@ -35,7 +35,8 @@ let s:string;
 e = 'hello';
 
 // unknown 实际上就是一个类型安全的any
-// unknown类型的变量，不能直接赋值给其他变量
+// unknown 类型的变量，不能直接赋值给其他变量
+// unknown 需要先判断类型才可以使用
 if(typeof e === "string"){
     s = e;
 }

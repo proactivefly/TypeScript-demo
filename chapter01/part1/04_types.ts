@@ -60,6 +60,7 @@ enum Gender{
 }
  
 let i: {name: string, gender: Gender};
+
 i = {
     name: '孙悟空',
     gender: Gender.Male // 'male'
@@ -84,7 +85,11 @@ k = 2;
 /**
  * 
  * 数组中包含对象嵌套关系
- * type 和 interface区别 ：https://www.jb51.net/article/163299.html 
+ * type 和 interface区别 ：https://juejin.cn/post/7066757947140866056
+ * 
+ * inteface 接口，type类型别名
+ * interface:可以重复声明，合并
+ * type重复声明会报错 
  */
 
 
