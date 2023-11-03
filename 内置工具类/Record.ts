@@ -28,7 +28,7 @@ const animals: AnimalInfo = {
 };
 
 
-// 将一个对象类型的属性映射到另一个类型上
+// 将一个对象类型的属性（key）映射到另一个类型上
 interface Person {
     id: number;
     name: string;

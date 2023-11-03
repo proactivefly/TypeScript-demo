@@ -1,3 +1,4 @@
+// 转换成可选的
 interface Foo {
     name: string
     age: number

@@ -1,3 +1,4 @@
+// 剔除某一属性
 type Foo = {
 	name: string
 	age: number
